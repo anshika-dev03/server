@@ -28,6 +28,8 @@ app.get("/", (req, res) => {
 app.get("/api/v1/test", (req, res) => {
   res.json({ message: "API v1 is working!" });
 });
-app.listen(process.env.PORT, () => {
-  console.log(`Server Started : ${process.env.PORT}`);
-});
+// app.listen(process.env.PORT, () => {
+//   console.log(`Server Started : ${process.env.PORT}`);
+// });
+
+module.exports = app;
