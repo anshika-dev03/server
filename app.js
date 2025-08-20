@@ -25,7 +25,9 @@ app.use("/api/v1", tasksApi);
 app.get("/", (req, res) => {
   res.json({ message: "Backend is running!" });
 });
-
+app.get("/api/v1/test", (req, res) => {
+  res.json({ message: "API v1 is working!" });
+});
 app.listen(process.env.PORT, () => {
   console.log(`Server Started : ${process.env.PORT}`);
 });
